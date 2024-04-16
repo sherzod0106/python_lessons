@@ -1,0 +1,2 @@
+# obekt ichida obekt 
+
