@@ -3,13 +3,13 @@ class Shaxs(): #  'super-class' yoki 'ota-class' yaratamiz
     def __init__(self,ism,familiya,passport): # 3 ta xususiyat oladi
         self.ism=ism
         self.familiya=familiya
-        self.passport=passport
+        self.__passport=passport
         
         
     def get_info(self):
         info=f'{self.ism} {self.familiya}'
         info += f' passport:{self.passport}, {self.tyil}-yilda tug`ilgan'
-        return info
+        return self.info
     
     def get_age(self,yil):
         return yil-self.tyil
